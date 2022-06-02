@@ -9,7 +9,7 @@
     // https://github.com/tensorflow/tfjs-models/tree/master/speech-commands
 
     // the link to your model provided by Teachable Machine export panel
-    const URL = "./tm-my-audio-model/";
+    const URL = "./my_model/";
 
     async function createModel() {
         const checkpointURL = URL + "model.json"; // model topology
@@ -56,27 +56,3 @@
         // setTimeout(() => recognizer.stopListening(), 5000);
     }
 </script>
-<script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyA3o8NKmgMz7R2hneeWkqhKf-0AsPvdlgM",
-      authDomain: "tbalarm-a0e5e.firebaseapp.com",
-      databaseURL: "https://tbalarm-a0e5e-default-rtdb.firebaseio.com",
-      projectId: "tbalarm-a0e5e",
-      storageBucket: "tbalarm-a0e5e.appspot.com",
-      messagingSenderId: "755201340178",
-      appId: "1:755201340178:web:361ccfbe09c56b1fe0b9cb",
-      measurementId: "G-15PP1KP2V6"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
